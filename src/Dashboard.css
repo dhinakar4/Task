@@ -1,0 +1,7 @@
+.dashboard {
+  min-height: 90vh;
+}
+
+body.dark .dashboard {
+  background-color: #0f172a;
+}

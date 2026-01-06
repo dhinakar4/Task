@@ -1,0 +1,59 @@
+/* Light theme */
+body.light {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #1f2933;
+  color: #f9fafb;
+}
+
+/* Common styles */
+.card {
+  /* background: white; */
+  padding: 16px;
+  border-radius: 10px;
+  color: black;
+}/* Light theme */
+body.light {
+  /* background-color: #f3f4f6; */
+  color: #111827;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #1f2933;
+  color: #f9fafb;
+}
+
+/* Common styles */
+.card {
+  /* background: white; */
+  padding: 0;
+  border-radius: 10px;
+  color: black;
+}
+
+body.dark .card {
+  background: #111827;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+body.dark .card {
+  background: #111827;
+}
+
+button {
+  cursor: pointer;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
