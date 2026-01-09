@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { TbLogout } from "react-icons/tb";
 import { useContext } from "react";
-import {ThemeContext} from "./context/ThemeContext"
+import {ThemeContext} from "./context/ThemeContext";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 

@@ -40,7 +40,7 @@ export default function LoginPage() {
         if (validate()) {
             if (email === adminEmail && adminPassword) {
                 navigate("/dashboard");
-                alert("Login Successfully!")
+                // alert("Login Successfully!")
             } else {
                 alert("Invalid Email or Password!");
             }
