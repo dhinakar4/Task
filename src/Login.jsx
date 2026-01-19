@@ -8,11 +8,13 @@ export default function LoginPage() {
     const navigate = useNavigate();
 
     const adminEmail = "dhinakar4334@gmail.com";
-    const adminPassword = "4334";
+    const adminPassword = "Dhina@43";
 
     const validate = () => {
         let valid = true;
         const newErrors = { email: "", password: "" };
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+
 
         if (!email) {
             newErrors.email = "Email is required";
@@ -26,8 +28,8 @@ export default function LoginPage() {
         if (!password) {
             newErrors.password = "Password is required";
             valid = false;
-        } else if (password.length < 4) {
-            newErrors.password = "Password must be at least 4 characters";
+        } else if (!passwordRegex.test(password)) {
+            newErrors.password = "Enter Strong Password!";
             valid = false;
         }
 

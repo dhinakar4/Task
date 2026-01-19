@@ -15,8 +15,8 @@ export default function UserDetails() {
     }
 
     return (
-        <div className="detail-page min-h-screen p-6 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100" 
-        style={{ minHeight: "100vh" }}>
+        <div className="detail-page min-h-screen p-6 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+            style={{ minHeight: "100vh" }}>
             <h1 className="text-3xl font-bold mb-4">
                 User Details
             </h1>
@@ -27,7 +27,11 @@ export default function UserDetails() {
                 <p><b>Phone:</b> {user.phone}</p>
                 <p><b>Company:</b> {user.company?.name}</p>
             </div>
-            <button onClick={() => navigate(-1)} className="text-white rounded-pill bg-blue-500 py-1 mt-2 px-3">back</button>
+            <button onClick={() =>
+                navigate("/dashboard", {
+                    state: { activeTab: "users" }
+                })
+            } className="text-white rounded-pill bg-blue-500 py-1 mt-2 px-3">back</button>
 
         </div>
     );

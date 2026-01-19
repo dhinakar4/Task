@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import {
     fetchUsersStart,
     fetchUsersSuccess,
@@ -85,6 +86,12 @@ export default function Dashboard() {
         indexOfLast
     );
 
+    const location = useLocation();
+    useEffect(() => {
+        if(location.state?.activeTab) {
+            setActiveTab(location.state.activeTab)
+        }
+    },[location.state])
     return (
         <>
             <Navbar1 />
